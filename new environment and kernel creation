@@ -8,6 +8,12 @@ conda activate myenv_name
 conda install ipykernel
 ipython kernel install --user --name=myenv_name-kernel
 
+# rempving any existing kernel 
+
+jupyter kernelspec uninstall yourKernelname
+
 conda deactivate
 
 conda install jupyter
+
+
