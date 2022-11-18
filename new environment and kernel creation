@@ -1,0 +1,13 @@
+# creating new environment
+
+conda create --name myenv_name
+conda activate myenv_name
+
+# creating kernel for new environment
+
+conda install ipykernel
+ipython kernel install --user --name=myenv_name-kernel
+
+conda deactivate
+
+conda install jupyter
